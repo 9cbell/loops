@@ -9,13 +9,22 @@ function loopOne(time){
       console.log("Done Son!");
 }
 
-function loopTwo(){
-
-
+function loopTwo(number,power){
+    let sum=0;
+    //p is the current power
+    for(let p=0; p<=power; p++){
+    sum=sum + Math.pow(number,p)
+    //new=old+next dude
+    }
+    return sum;
 }
 
-function loopThree(){
-
+function loopThree(symbol, number){
+    let lasttime="";
+    for(let s=1; s<=number;s++){
+        lasttime=lasttime+symbol;
+        console.log(lasttime);
+    }
 
 }
 
